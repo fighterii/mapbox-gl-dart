@@ -90,6 +90,7 @@ class MapboxMap extends Camera {
   ///  map.addControl(new NavigationControl());
   ///  @see [Display map navigation controls](https://www.mapbox.com/mapbox-gl-js/example/navigation/)
   MapboxMap addControl(dynamic control, [String? position]) {
+
     if (position != null) {
       return MapboxMap.fromJsObject(
           jsObject.addControl(control.jsObject, position));

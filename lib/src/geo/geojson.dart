@@ -24,8 +24,8 @@ class FeatureCollection extends JsObjectWrapper<FeatureCollectionJsImpl> {
 }
 
 class Feature extends JsObjectWrapper<FeatureJsImpl> {
-  dynamic get id => jsObject.id;
-  set id(dynamic id) {
+  num get id => jsObject.id;
+  set id(num id) {
     jsObject.id = id;
   }
 
@@ -35,7 +35,7 @@ class Feature extends JsObjectWrapper<FeatureJsImpl> {
   String get source => jsObject.source;
 
   factory Feature({
-    dynamic id,
+    num? id,
     required Geometry geometry,
     Map<String, dynamic>? properties,
     String? source,
@@ -49,7 +49,7 @@ class Feature extends JsObjectWrapper<FeatureJsImpl> {
       ));
 
   Feature copyWith({
-    dynamic id,
+    num? id,
     Geometry? geometry,
     Map<String, dynamic>? properties,
     String? source,
