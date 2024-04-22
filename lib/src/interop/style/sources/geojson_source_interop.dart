@@ -11,6 +11,7 @@ class GeoJsonSourceJsImpl {
   external String get promoteId;
   external factory GeoJsonSourceJsImpl({
     String? type,
+    String? promoteId,
     FeatureCollectionJsImpl data,
   });
 
