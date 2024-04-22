@@ -694,6 +694,8 @@ class MapboxMapJsImpl extends CameraJsImpl {
   ///  @see [Add a WMS source](https://www.mapbox.com/mapbox-gl-js/example/wms/)
   external MapboxMapJsImpl addLayer(dynamic layer, [String? beforeId]);
 
+  external MapboxMapJsImpl setTerrain(dynamic terrain);
+
   ///  Moves a layer to a different z-position.
   ///
   ///  @param {string} id The ID of the layer to move.
