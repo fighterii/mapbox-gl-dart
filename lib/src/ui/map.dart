@@ -759,6 +759,10 @@ class MapboxMap extends Camera {
     return MapboxMap.fromJsObject(jsObject.addLayer(jsify(layer), beforeId));
   }
 
+  MapboxMap setTerrain(dynamic terrain){
+    return MapboxMap.fromJsObject(jsObject.setTerrain(jsify(terrain)));
+  }
+
   //jsObject.addLayer(layer.jsObject ?? jsify(layer));
 
   ///  Moves a layer to a different z-position.
