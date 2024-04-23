@@ -26,7 +26,7 @@ class FeatureJsImpl {
   external dynamic get properties;
   external String get source;
   external factory FeatureJsImpl({
-    num? id,
+    dynamic id,
     String? type,
     GeometryJsImpl geometry,
     dynamic? properties,
