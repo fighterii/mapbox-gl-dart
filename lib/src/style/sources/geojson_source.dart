@@ -6,7 +6,7 @@ import 'package:mapbox_gl_dart/src/interop/interop.dart';
 class GeoJsonSource extends Source<GeoJsonSourceJsImpl> {
   FeatureCollection get data => FeatureCollection.fromJsObject(jsObject.data);
   String? get promoteId => jsObject.promoteId;
-
+  
   factory GeoJsonSource({
     required FeatureCollection data,
     String? promoteId,

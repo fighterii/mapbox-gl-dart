@@ -7,9 +7,11 @@ import 'package:js/js.dart';
 @anonymous
 class FeatureCollectionJsImpl {
   external String get type;
+  external String get promoteId;
   external List<FeatureJsImpl> get features;
   external factory FeatureCollectionJsImpl({
     String type,
+    String? promoteId,
     List<FeatureJsImpl> features,
   });
 }
