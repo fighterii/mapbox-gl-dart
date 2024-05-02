@@ -29,7 +29,7 @@ class FeatureJsImpl {
     dynamic id,
     String? type,
     GeometryJsImpl geometry,
-    dynamic? properties,
+    dynamic properties,
     String? source,
   });
 }
